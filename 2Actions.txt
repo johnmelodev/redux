@@ -1,0 +1,11 @@
+ACTIONS
+
+nossas fontes de informacoes
+nao aplicam as mudancas apenas guardam as fontes de informacoes
+
+sempre com type e payload
+
+Ex: {
+    type: "ADD_ITEM_TO_CART",
+    payload: {item_name: "Blusa", item_price: 10}
+}

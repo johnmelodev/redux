@@ -1,0 +1,40 @@
+-------STORE
+
+- principal local onde vide nossa application redux
+- é um objeto javascript que vai conter todos os estados de nossa aplicacao
+- um unico ponto de verdade
+
+-------ACTIONS
+
+nossas fontes de informacoes
+nao aplicam as mudancas apenas guardam as fontes de informacoes
+
+sempre com type e payload
+
+Ex: {
+    type: "ADD_ITEM_TO_CART",
+    payload: {item_name: "Blusa", item_price: 10}
+}
+
+-------REDUCERS
+
+funcionam como filtros, recebem e tratam as informacoes enviando as informacoes ao nosso estado.
+
+vai ouvir todas as nossas actions que forem disparadas
+
+
+import { combineReducers, createStore } from "redux"
+import themeReducer from "./reducers/theme.reducer"
+import { iStore } from "./store.types"
+
+export const initialStoreState: iStore = {
+  theme: {},
+  sidebar: false,
+}
+
+const reducers = combineReducers({
+  theme: themeReducer,
+})
+
+const store = createStore(reducers)
+export default store;

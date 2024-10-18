@@ -1,0 +1,5 @@
+STORE
+
+- principal local onde vide nossa application redux
+- é um objeto javascript que vai conter todos os estados de nossa aplicacao
+- um unico ponto de verdade

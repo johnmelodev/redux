@@ -1,0 +1,21 @@
+centralizar nossas informacoes
+
+nossos dados em um só lugar dentro de toda nossa aplicacao
+
+usando uma arquitetura chamada FLUX
+
+PORQUE USAR
+
+- centraliza tudo em um so lugar resolve nossos problemas  de compartilhamento de estados
+- de passar propriedades de filho para filho
+- te deixa acessar essas informacoes do estado global em qualquer componente de sua aplicacao
+- diminui a quantidade de responsabilidades e logicas que voce tem e eventos que voce tera em cada componente ajoining tudo em um só lugar
+
+
+FLUXO
+
+UI DEPOSITAR OU SACAR
+- clicou cria uma acao
+VAI SER DISPARADA PARA O REDUCER VAI CUIDAR FAZER A MANUTENCAO E ATUALIZA O ESTADO
+- por final a UI
+UI atualiza para o estado após

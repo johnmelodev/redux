@@ -1,0 +1,20 @@
+funcionam como filtros, recebem e tratam as informacoes enviando as informacoes ao nosso estado.
+
+vai ouvir todas as nossas actions que forem disparadas
+
+
+import { combineReducers, createStore } from "redux"
+import themeReducer from "./reducers/theme.reducer"
+import { iStore } from "./store.types"
+
+export const initialStoreState: iStore = {
+  theme: {},
+  sidebar: false,
+}
+
+const reducers = combineReducers({
+  theme: themeReducer,
+})
+
+const store = createStore(reducers)
+export default store;

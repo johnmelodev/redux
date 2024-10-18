@@ -1,0 +1,10 @@
+function actionAddToCart(product: any) {
+    return {
+      type: 'ADD_TO_CART',
+      payload: {
+        item_name: product.name,
+        item_price: product.price,
+      },
+    };
+  }
+  
